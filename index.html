@@ -100,7 +100,33 @@
     transform: translateY(-6px);
     box-shadow: 0 14px 35px rgba(0,0,0,0.4);
   }
+.trust-grid {
+  display: grid;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
 
+/* Mobile */
+@media (max-width: 767px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
   /* Contact Form Upgrade */
 form {
   max-width: 650px;
