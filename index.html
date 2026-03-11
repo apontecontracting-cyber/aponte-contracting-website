@@ -335,6 +335,32 @@ color:#facc15;
 font-weight:600;
 letter-spacing:.5px;
 }
+.trust-badges{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:14px;
+margin-top:25px;
+}
+
+.badge{
+display:flex;
+align-items:center;
+gap:8px;
+background:white;
+color:#0b1c2d;
+border:1px solid #e5e5e5;
+padding:10px 16px;
+border-radius:25px;
+font-size:14px;
+font-weight:600;
+}
+
+.badge-icon{
+width:16px;
+height:16px;
+color:#d4af37;
+}
 </style>
 </style>
 <header style="background:linear-gradient(135deg,#0b1c2d,#132f4c); color:white; padding:80px 20px; text-align:center; position:relative;">
@@ -376,24 +402,46 @@ Licensed • Insured • Veteran Owned • 30+ Years Experience
 
 <h2>Why Homeowners Trust Aponte Contracting</h2>
 
-<div class="trust-grid">
+<div class="trust-badges">
 
-<div>
-<h3>30+ Years of Experience</h3>
-<p>
-Our team brings over three decades of hands-on construction and remodeling experience serving homeowners across Massachusetts.
-</p>
+<div class="badge">
+<svg class="badge-icon" viewBox="0 0 24 24">
+<path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none"/>
+</svg>
+Licensed & Insured
 </div>
 
-<div>
-<h3>Veteran Owned Business</h3>
-<p>
-As a proud veteran-owned company, we operate with discipline, integrity, and a strong commitment to quality workmanship.
-</p>
+<div class="badge">
+<svg class="badge-icon" viewBox="0 0 24 24">
+<path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" fill="currentColor"/>
+</svg>
+Veteran Owned
 </div>
 
+<div class="badge">
+<svg class="badge-icon" viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+<path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" fill="none"/>
+</svg>
+30+ Years Experience
+</div>
+
+<div class="badge">
+<svg class="badge-icon" viewBox="0 0 24 24">
+<path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" fill="currentColor"/>
+</svg>
+A+ BBB Rating
+</div>
+
+<div class="badge">
+<svg class="badge-icon" viewBox="0 0 24 24">
+<path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" fill="currentColor"/>
+</svg>
+5-Star Angi Reviews
+</div>
 
 </div>
+  </div>
 
 </div>
 <section class="section">
