@@ -296,15 +296,31 @@ transform:scale(1.05);
 position:absolute;
 top:25px;
 right:25px;
+display:flex;
+align-items:center;
+gap:10px;
 background:linear-gradient(145deg,#d4af37,#f5d76e);
 color:#0b1c2d;
-padding:10px 16px;
+padding:10px 14px;
 border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.35);
 font-weight:bold;
+}
+
+.shield-flag{
+font-size:20px;
+}
+
+.shield-text{
 font-size:13px;
-line-height:1.3;
-text-align:center;
-box-shadow:0 6px 15px rgba(0,0,0,0.3);
+line-height:1.2;
+}
+
+.shield-text span{
+display:block;
+font-size:11px;
+font-weight:600;
+opacity:.8;
 }
 
 .veteran-shield span{
@@ -315,10 +331,12 @@ font-weight:600;
 </style>
 <header style="background:linear-gradient(135deg,#0b1c2d,#132f4c); color:white; padding:80px 20px; text-align:center; position:relative;">
 <div class="veteran-shield">
-🇺🇸 Veteran Owned<br>
-<span>30+ Years Experience</span>
-</div>  
-  <img src="logo.png" alt="Aponte Contracting Logo" style="max-width:300px; display:block; margin:0 auto 30px auto;">
+  <div class="shield-flag">🇺🇸</div>
+  <div class="shield-text">
+    Veteran Owned
+    <span>30+ Years</span>
+  </div>
+</div>  <img src="logo.png" alt="Aponte Contracting Logo" style="max-width:300px; display:block; margin:0 auto 30px auto;">
  
   <h1 style="font-size:42px; margin-bottom:20px;">
   Family-Owned. Built on Trust. Serving Massachusetts with Pride.
