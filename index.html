@@ -301,11 +301,40 @@ color:#facc15;
 font-weight:600;
 letter-spacing:.5px;
 }
-.badge:hover{
-transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
+.trust-badges{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:14px;
+max-width:900px;
+margin:35px auto;
+}
+
+.trust-badge{
+display:flex;
+align-items:center;
+gap:8px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.15);
+color:white;
+padding:8px 16px;
+border-radius:20px;
+font-size:14px;
+font-weight:600;
+letter-spacing:.3px;
+transition:all .25s ease;
+}
+
+.trust-badge .icon{
+color:#facc15;
+font-size:14px;
+}
+
+.trust-badge:hover{
 border-color:#facc15;
-}</style>
+transform:translateY(-2px);
+box-shadow:0 6px 18px rgba(0,0,0,0.35);
+}  </style>
 </style>
 <header style="background:linear-gradient(135deg,#0b1c2d,#132f4c); color:white; padding:80px 20px; text-align:center; position:relative;">
   </div>
@@ -343,41 +372,33 @@ Licensed • Insured • Veteran Owned • 30+ Years Experience
 
 <div class="trust-badges">
 
-<div class="badge">
-<svg class="badge-icon" viewBox="0 0 24 24">
-<path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2" fill="none"/>
-</svg>
+<div class="trust-badge">
+<span class="icon">✔</span>
 Licensed & Insured
 </div>
 
-<div class="badge">
-<svg class="badge-icon" viewBox="0 0 24 24">
-<path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4z" fill="currentColor"/>
-</svg>
+<div class="trust-badge">
+<span class="icon">🇺🇸</span>
 Veteran Owned
 </div>
 
-<div class="badge">
-<svg class="badge-icon" viewBox="0 0 24 24">
-<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
-<path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" fill="none"/>
-</svg>
+<div class="trust-badge">
+<span class="icon">⏱</span>
 30+ Years Experience
 </div>
 
-<div class="badge">
-<svg class="badge-icon" viewBox="0 0 24 24">
-<path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" fill="currentColor"/>
-</svg>
+<div class="trust-badge">
+<span class="icon">🏛</span>
 A+ BBB Rating
 </div>
 
-<div class="badge">
-<svg class="badge-icon" viewBox="0 0 24 24">
-<path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" fill="currentColor"/>
-</svg>
+<div class="trust-badge">
+<span class="icon">⭐</span>
 5-Star Angi Reviews
 </div>
+
+</div>
+  </div>
 
 </div>
   </div>
